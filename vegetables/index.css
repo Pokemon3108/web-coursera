@@ -1,0 +1,77 @@
+.vegetable {
+	position: relative;
+	float:left;
+	list-style: none;
+	margin: auto 15px;
+	width: 300px;
+	padding: 10px;
+	/*z-index: 5;*/
+}
+
+img {
+	max-height: 250px;
+	max-width: 300px;
+}
+
+.vegetable-description {
+	display: none;
+	text-align: center;
+}
+
+.vegetable:hover .vegetable-description {
+	display: block;
+	font-family: 'Nunito', sans-serif;
+	
+}
+
+.vegetable:hover {
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	border: 1px solid grey;
+	z-index: 5;
+	background-color: white;
+}
+
+img {
+  cursor: zoom-in;
+}
+
+img:focus {
+ 	position: fixed;
+  	z-index: 10;
+  	top: 0;
+  	left: 0;
+  	bottom: 0;
+  	right: 0;
+  
+  	max-width: 500px;
+  	max-height: 600px;
+  	margin: auto;
+  	box-shadow: 0 0 20px #000, 0 0 0 1000px rgba(210,210,210,.4);
+}
+
+.block {
+	display: none;
+}
+
+input[id='radioButton1']:checked  ~ ul .block1,
+input[id='radioButton2']:checked ~ ul .block2,
+input[id='radioButton3']:checked ~ ul .block3,
+input[id='radioButton4']:checked ~ ul .block4
+{
+    display: initial;
+}
+
+input {
+	position: relative;
+    top: 80vh;
+    left: 45vw;
+    z-index: 1;
+}
+
+
+
+
+
+
+
+

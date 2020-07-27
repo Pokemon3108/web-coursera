@@ -1,0 +1,140 @@
+img{
+	max-height: 200px;
+}
+
+img:hover {
+	opacity: 0.7;
+}
+
+.block {
+	float: left;
+	height:750px;
+	list-style: none;
+   	text-align: center;
+   	border-top: 1px solid grey;
+   	padding: 15px;
+   	max-width: 300px;
+}
+
+a:hover {
+	color:red;
+}
+
+.name {
+	font: 18px Open Sans;
+	margin: auto 0 5px;
+	height: 1.5em;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+
+
+
+.category {
+	font: 12px Noto Serif;
+	color: grey;
+	text-decoration: underline;
+	margin: auto 0 5px;
+}
+
+.price {
+	font: 18px Roboto Condensed;
+}
+
+.description {
+	font-size: 12px;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 265px;
+	margin:auto -80px;
+		
+}
+
+.rating-area:not(:checked) > input {
+	display: none;
+}
+
+.rating-area:not(:checked) > label {
+	float: right;
+}
+
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+
+.rate-area > label:active {
+	position: relative;
+}
+
+span {
+	color: red;
+}
+
+.view:checked ~ .cats .block  > .info {
+	display: inline-block;
+	margin: auto 20px;
+	float: left;
+	width: 200px;
+}
+
+
+.view:checked ~ .cats .block  > .info > .rating-area {
+	display: inline-block;
+	margin: auto -200px;
+}
+
+.view:checked ~ .cats .block > .description {
+	text-align: justify;
+	flex-grow: 0.9;
+}
+
+.view:checked ~ .cats .block > .img-wrapper {
+	float:left;
+	width: 300px;
+}
+
+.view:checked ~ .cats .block {
+	clear: left;
+	max-width: none;
+	text-align: left;
+	height: auto;
+	display: flex;
+}
+
+.view:checked ~ .cats .block > .item {
+	flex-basis:300px;
+}
+
+
+
+
+
+
+
+
+
+
+
