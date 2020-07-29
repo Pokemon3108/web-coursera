@@ -4,13 +4,14 @@ body {
 
 h1 {
 	text-align: center;
-	padding:15px auto;
+	padding: 15px auto;
 	font: 40px 'Pacifico';
 }
 
 .content {
 	display: flex;
 	flex-basis: auto;
+	margin-bottom: 10px;
 }
 
 .content > * {
@@ -21,7 +22,7 @@ h1 {
 	flex-grow: 2;
 	overflow: hidden;
 	display: grid;
-	grid-template-rows: 300px 300px 300px 300px;
+	grid-template-rows: 350px 350px 350px 350px;
 	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-areas: "cat-1 cat-2 cat-2" 
 						 "cat-3 cat-4 cat-5"
@@ -35,9 +36,35 @@ h1 {
 
 img {
 	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	margin: 5px 10px !important; 
+	height: 100%; 
+}
+
+.images div p {
+	display: none;
+	position: absolute;
+}
+
+.images div:hover p {
+	display: block;
+	background-color: rgba(255, 215, 0, 0.5);;
+	font: 20px 'Arial';
+
+	animation: text-animation 1s linear forwards;
+}
+
+@keyframes text-animation {
+	0% {
+		transform: translateX(-20%);
+		opacity: 0;
+	}
+	50% {
+		transform: translateX(0%);
+		opacity: 0.3;
+	}
+	100% {
+		transform: translateX(20%);
+		opacity: 1;
+	}
 }
 
 .type, .rating {
@@ -80,16 +107,16 @@ img {
 }
 
 .rating {
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 0 15px;
+	align-self: flex-start;
 }
 
-.type {
+.type, .rating-list {
 	list-style: none;
 	padding: 0;
 }
 
-li {
+.type li {
 	padding: 10px 15px;
 	border-bottom: 2px solid #DEB887;
 }
@@ -99,3 +126,62 @@ li {
 	font-size: 22px;
 	color: red;
 }
+
+
+footer {
+	border-top: 2px solid #8B4513;
+	height: 50px;
+}
+
+.address {
+	float: right;
+	color: blue;
+	margin-right: 25px;
+}
+
+.company {
+	float: left;
+	margin-left: 25px;
+}
+
+.address, .company {
+	margin-top: 15px;
+	font-family: 'PT Serif Caption', serif;
+}
+
+.rating label {
+	font-size: 12px;
+	padding-bottom: 2px;
+}
+
+.rating-list li img {
+	height: 15px;
+	width: 60%;
+
+}
+
+.rating-list li span {
+	display: inline-block;
+	text-align: right;
+	float: right;
+	/*font-family: 'Roboto Slab', serif;*/
+	font: 20px 'Roboto Slab';
+}
+
+#desc:checked + .rating-list .british {
+	order: 1;
+}
+
+#desc:checked + .rating-list .rus-blue {
+	order: 2;
+}
+
+#desc:checked + .rating-list .sphinx {
+	order: 3;
+}
+
+#desc:checked + .rating-list .maine-coon {
+	order: 4;
+}
+
+
