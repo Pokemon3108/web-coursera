@@ -1,0 +1,101 @@
+body {
+	background-color: #FFF8DC;
+}
+
+h1 {
+	text-align: center;
+	padding:15px auto;
+	font: 40px 'Pacifico';
+}
+
+.content {
+	display: flex;
+	flex-basis: auto;
+}
+
+.content > * {
+	margin: 0 10px;
+}
+
+.images {
+	flex-grow: 2;
+	overflow: hidden;
+	display: grid;
+	grid-template-rows: 300px 300px 300px 300px;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: "cat-1 cat-2 cat-2" 
+						 "cat-3 cat-4 cat-5"
+						 "cat-6 cat-6 cat-7"
+						 "cat-8 cat-8 cat-8";
+
+	width: 75%;	 
+	grid-column-gap: 13px;
+    grid-row-gap: 13px;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	margin: 5px 10px !important; 
+}
+
+.type, .rating {
+	background-color: #F5DEB3;
+	width: 15%;	
+	font-family: 'Balsamiq Sans', cursive;
+}
+
+.cat-1 {
+	grid-area: cat-1;
+
+}
+
+.cat-2 {
+	grid-area: cat-2;
+}
+
+.cat-3 {
+	grid-area: cat-3;
+}
+
+.cat-4 {
+	grid-area: cat-4;
+}
+
+.cat-5 {
+	grid-area: cat-5;
+}
+
+.cat-6 {
+	grid-area: cat-6;
+}
+
+.cat-7 {
+	grid-area: cat-7;
+}
+
+.cat-8 {
+	grid-area: cat-8;
+}
+
+.rating {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.type {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	padding: 10px 15px;
+	border-bottom: 2px solid #DEB887;
+}
+
+.rating-text {
+	margin: 2px;
+	font-size: 22px;
+	color: red;
+}
