@@ -157,30 +157,34 @@ footer {
 .rating-list li img {
 	height: 15px;
 	width: 60%;
+}
 
+.rating-list {
+	display: flex;
+	flex-direction: column;
 }
 
 .rating-list li span {
 	display: inline-block;
 	text-align: right;
 	float: right;
-	/*font-family: 'Roboto Slab', serif;*/
 	font: 20px 'Roboto Slab';
+	margin-top: -5px;
 }
 
-#desc:checked + .rating-list .british {
+#desc:checked ~ .rating-list .british {
 	order: 1;
 }
 
-#desc:checked + .rating-list .rus-blue {
+#desc:checked ~ .rating-list .rus-blue {
 	order: 2;
 }
 
-#desc:checked + .rating-list .sphinx {
+#desc:checked ~ .rating-list .sphinx {
 	order: 3;
 }
 
-#desc:checked + .rating-list .maine-coon {
+#desc:checked ~ .rating-list .maine-coon {
 	order: 4;
 }
 
