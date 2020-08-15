@@ -1,0 +1,89 @@
+body {
+	background-color: #DCDCDC;
+	text-align: center;
+	margin-top: 0px;
+}
+
+main {
+	width: 1280px;
+	margin: auto;
+}
+
+.cars-text {
+	position: relative;
+}
+
+
+q {
+	font: 27px 'Roboto';
+	display: inline-block;
+	margin: 15px 30%;
+	text-align: left;
+}
+
+.logo {
+	float: right;
+	margin-right: 25%;
+}
+
+.cars > img {
+	max-width: 250px;
+	max-height: 250px;
+}
+
+.round {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+	box-shadow: 4px 2px 2px orange;
+	
+	position: absolute;
+	top: 50%;
+
+}
+
+.left {
+	left: 15%;
+}
+
+.right {
+	right: 15%;
+}
+
+.round > img {
+	max-width: 75px;
+	max-height: 75px;	
+}
+
+.left > img {
+	padding-top: 11px;
+	padding-right: 12px;
+}
+
+.right > img {
+	padding-top: 11px;
+	padding-left: 12px;
+}
+
+.video {
+	position: relative;
+}
+
+.video > img {
+	max-width: 550px;
+	max-height: 550px;
+}
+
+.video p {
+	position: absolute;
+	top: 0;
+	margin-top: 0;
+	width: 100%;
+}
+
+.video p > span {
+	color: white;
+	font: 22px 'Roboto';
+    background-color: rgba(70, 130, 180, 0.6);
+}
